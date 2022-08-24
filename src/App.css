@@ -4,6 +4,7 @@ body {
     background-position: center;
     background-size: cover;
     font-family: 'Merriweather', serif;
+    height: 100vh;
   }
 
 .robots {
@@ -60,7 +61,7 @@ button {
 }
 
 img {
-  max-width: 250px;
+  max-width: 300px;
   height: auto;
 }
 
@@ -150,3 +151,12 @@ img {
 .enemy-robot-power:hover {
   visibility: hidden;
 } */
+
+.fight-result {
+  color: white;
+  font-size: 2rem;
+}
+
+.hide-show-result {
+  visibility: hidden;
+}

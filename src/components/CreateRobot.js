@@ -14,15 +14,16 @@ function CreateRobot(props) {
 
     const fightClickButton = () => {
         if(yourPower > props.enemyPower) {
-            alert('You win')
+            return document.getElementById('fightResult').innerText = "🎉  You Won 🎉"
         }
         else if ( props.enemyPower > yourPower ){
-            alert('You lose')
+            return document.getElementById('fightResult').innerText = "You Lose"
         } else {
-            alert('DRAW')
+            return document.getElementById('fightResult').innerText = "DRAW"
         }
-
     }
+
+    console.log(fightClickButton)
 
     return (
         <div className="your-robot-container">
@@ -33,8 +34,8 @@ function CreateRobot(props) {
             <p className="robot-power" onKeyPress={handleChange}>POWER: ⚡  {yourPower}  ⚡</p>
             </div>
             <div>
-            <h3>hi</h3>
-            <button onClick={fightClickButton}  className="fight-button">FIGHT</button>
+            <h3 className='fight-result' id='fightResult'></h3>
+            <button onClick={fightClickButton}  className="fight-button">FIGHT </button>
             </div>
         </div>
     )

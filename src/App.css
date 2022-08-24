@@ -52,6 +52,7 @@ body {
 }
 
 input {
+  font-family: 'Merriweather', serif;
   font-size: 1rem;
   border-radius: 50px;
   height: 35px;
@@ -86,6 +87,17 @@ img {
 
 .header-title-description {
   margin-top: 0px;
+}
+
+.fight-result {
+  font-size: 2rem;
+  color: white;
+}
+
+.result-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .fight-button {
@@ -138,7 +150,7 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #111;
+  background: rgb(68, 68, 68);
   left: 0;
   top: 0;
   border-radius: 10px;
@@ -150,13 +162,10 @@ img {
   100% { background-position: 0 0; }
 }
 
-.fight-result {
-  font-size: 2rem;
-  color: white;
-}
 
-.result-section-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.play-againg-button {
+  font-size: 10px;
+  width: 80px;
+  height: 30px;
 }

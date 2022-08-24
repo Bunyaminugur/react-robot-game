@@ -23,12 +23,16 @@ function CreateRobot(props) {
         }
     }
 
+    const playAgainButton = () => {
+        return window.location.reload(false);
+    }
+
     console.log(fightClickButton)
 
     return (
         <div className="your-robot-container">
             <div className="your-robot">
-                <h1>Name your Robot and press enter</h1>
+                <h1>Name your robot and press enter</h1>
                 <input type="text" placeholder="Your Robot Name" id="robotName" onKeyPress={handleChange}/>
                 <img className='your-robot-img' src={`https://robohash.org/${robotName}.png`} alt="Your Robot img"/>
                 <p className="robot-power" onKeyPress={handleChange}>POWER: ⚡  {yourPower}  ⚡</p>
@@ -36,6 +40,7 @@ function CreateRobot(props) {
             <div className='result-section-container'>
                 <h3 className='fight-result' id='fightResult'></h3>
                 <button onClick={fightClickButton}  className="fight-button">FIGHT </button>
+                <button onClick={playAgainButton} className="fight-button play-againg-button">Play again </button>
             </div>
         </div>
     )

@@ -28,14 +28,14 @@ function CreateRobot(props) {
     return (
         <div className="your-robot-container">
             <div className="your-robot">
-            <h3>Name your Robot and press enter</h3>
-            <input type="text" placeholder="Your Robot Name" id="robotName" onKeyPress={handleChange}/>
-            <img className='your-robot-img' src={`https://robohash.org/${robotName}.png`} alt="Your Robot img"/>
-            <p className="robot-power" onKeyPress={handleChange}>POWER: ⚡  {yourPower}  ⚡</p>
+                <h1>Name your Robot and press enter</h1>
+                <input type="text" placeholder="Your Robot Name" id="robotName" onKeyPress={handleChange}/>
+                <img className='your-robot-img' src={`https://robohash.org/${robotName}.png`} alt="Your Robot img"/>
+                <p className="robot-power" onKeyPress={handleChange}>POWER: ⚡  {yourPower}  ⚡</p>
             </div>
-            <div>
-            <h3 className='fight-result' id='fightResult'></h3>
-            <button onClick={fightClickButton}  className="fight-button">FIGHT </button>
+            <div className='result-section-container'>
+                <h3 className='fight-result' id='fightResult'></h3>
+                <button onClick={fightClickButton}  className="fight-button">FIGHT </button>
             </div>
         </div>
     )

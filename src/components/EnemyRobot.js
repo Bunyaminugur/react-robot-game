@@ -16,7 +16,7 @@ function EnemyRobot(props) {
             <h1>Your enemy</h1>
             <h1>{randomName}</h1>
             <img src={`https://robohash.org/${randomName}.png`} alt="Your Robot img"/>
-            <p className="robot-power">POWER: ⚡  <p className='enemy-robot-power'> {props.enemyPower} </p>  ⚡</p>
+            <p className="robot-power">POWER: ⚡ {props.enemyPower} ⚡</p>
         </div>
     )
 }

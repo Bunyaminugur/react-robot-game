@@ -26,8 +26,8 @@ function EnemyRobot(props) {
             <h1>Your enemy</h1>
             <h1>{randomName}</h1>
             <img src={`https://robohash.org/${randomName}.png`} alt="Your Robot img"/>
-            <p onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>Hover to see enemy power</p>
-            <p className="robot-power">POWER: ⚡ {isHovering && <div>{props.enemyPower}</div>} ⚡</p>
+            <p className="hover-enemy-power" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>Hover to see enemy power</p>
+            <p className="robot-power enemy-robot-power">POWER: ⚡ {isHovering && <div>{props.enemyPower}</div>} ⚡</p>
         </div>
     )
 }

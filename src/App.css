@@ -58,6 +58,8 @@ input {
   height: 35px;
   margin-bottom: 0px;
   text-align: center;
+  border: none;
+  outline: none;
 }
 
 button {
@@ -168,3 +170,14 @@ img {
   height: 30px;
 }
 
+.hover-enemy-power {
+  cursor: pointer;
+}
+
+.enemy-robot-power{
+  margin-top: 0px;
+}
+
+#robotName {
+  margin-top: 30px;
+}

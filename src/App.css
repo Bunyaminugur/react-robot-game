@@ -1,7 +1,5 @@
 body {
-    background: url(https://images.unsplash.com/photo-1574781481375-74a09eba71e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: linear-gradient(to bottom, #7d98c0, #4a798b, #345656, #27332d, #131411);
     font-family: 'Merriweather', serif;
     height: 100vh;
   }
@@ -20,7 +18,8 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 1.5rem;
+  align-content: center;
+  width: 100%;
 }
 
 .your-robot-container {
@@ -39,15 +38,25 @@ body {
   align-items: center;
   color: rgb(255, 255, 255);
   text-align: center;
+  border-style: solid;
+  border-color: #385B5E;
+  background-color: #385B5E;
+  border-radius: 25px;
+  padding: 25px;
 }
 .enemy-robot {
-  margin-left: 5rem;
+  margin-left: 10rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 400px;
   align-items: center;
   color: rgb(255, 255, 255);
+  border-style: solid;
+  border-color: #385B5E;
+  background-color: #385B5E;
+  border-radius: 25px;
+  padding: 25px;
 }
 
 input {
@@ -67,7 +76,7 @@ button {
 }
 
 img {
-  max-width: 300px;
+  max-width: 250px;
   height: auto;
 }
 
@@ -84,6 +93,9 @@ img {
   font-size: 1.8rem;
   font-weight: 800;
   color: rgb(255, 255, 255);
+  border-radius: 25px;
+  border-color: #2D4441;
+  background-color: #2D4441;
 }
 
 .header-title-description {
@@ -151,7 +163,7 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgb(68, 68, 68);
+  background: #2D4441;
   left: 0;
   top: 0;
   border-radius: 10px;
@@ -171,7 +183,7 @@ img {
 
 .hover-enemy-power {
   cursor: pointer;
-  color: rgb(169, 255, 140);
+  color: rgb(140, 199, 211);
   font-weight: 600;
 }
 
@@ -185,10 +197,15 @@ img {
 
 .footer {
   color: white;
-  right: 40%;
-  left: 40%;
+  right: 30%;
+  left: 45%;
   position: fixed;
   bottom: 0;
   align-items: center;
   margin-top: auto;
+  font-size: 10px;
+}
+
+.random-name-generator {
+  font-size: 25px;
 }

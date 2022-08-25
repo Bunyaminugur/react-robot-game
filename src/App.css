@@ -172,6 +172,8 @@ img {
 
 .hover-enemy-power {
   cursor: pointer;
+  color: rgb(169, 255, 140);
+  font-weight: 600;
 }
 
 .enemy-robot-power{
@@ -180,4 +182,14 @@ img {
 
 #robotName {
   margin-top: 30px;
+}
+
+.footer {
+  color: white;
+  right: 40%;
+  left: 40%;
+  position: fixed;
+  bottom: 0;
+  align-items: center;
+  margin-top: auto;
 }

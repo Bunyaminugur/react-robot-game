@@ -23,7 +23,7 @@ function EnemyRobot(props) {
 
     return (
         <div className="enemy-robot">
-            <h2>Your enemy</h2>
+            <h3>Your enemy</h3>
             <h1 className="random-name-generator">{randomName}</h1>
             <img src={`https://robohash.org/${randomName}.png`} alt="Your Robot img"/>
             <p className="hover-enemy-power" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>Hover to see enemy power</p>

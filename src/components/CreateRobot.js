@@ -32,7 +32,7 @@ function CreateRobot(props) {
     return (
         <div className="your-robot-container">
             <div className="your-robot">
-                <h4>Name your robot and press enter</h4>
+                <h4 className="your-robot-container-title">Name your robot and press enter</h4>
                 <input type="text" placeholder="Your Robot Name" id="robotName" onKeyPress={handleChange}/>
                 <img className='your-robot-img' src={`https://robohash.org/${robotName}.png`} alt="Your Robot img"/>
                 <p className="robot-power" onKeyPress={handleChange}>POWER: ⚡  {yourPower}  ⚡</p>

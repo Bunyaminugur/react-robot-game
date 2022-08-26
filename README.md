@@ -1,7 +1,19 @@
 # React Mini Robot Game
 
-<img src="" />
+You can play the game <a href="https://sage-swan-7573af.netlify.app/"> here </a>
+<img href="https://sage-swan-7573af.netlify.app/" src="./public/game.png" />
 
+I was looking for a unique API for making a project, after a while i found a random robot image generator (robohash.org) and i wanted to make a little game with it. I searched on the internet and found nothing about this random robot image generator project that i had in my mind. This was a really good challenge for me to make a little game without looking at any tutorials.
+
+<h3>While making this project i got to know more about these things:</h3>
+<ul>
+<li>React hooks</li>
+<li>React Components</li>
+<li>Passing data between different components</li>
+<li>Installing and using React libraries</li>
+<li>React events</li>
+<li>React DOM manipulation</li>
+</ul>
 
 # Getting Started with Create React App
 

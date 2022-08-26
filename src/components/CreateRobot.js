@@ -27,8 +27,6 @@ function CreateRobot(props) {
         return window.location.reload(false);
     }
 
-    console.log(fightClickButton)
-
     return (
         <div className="your-robot-container">
             <div className="your-robot">
